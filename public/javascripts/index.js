@@ -1,7 +1,9 @@
 $(document).ready(function () {
   var timeData = [],
     elevatorSineData = [],
-    cabinPosData = [];
+    cabinPosData = [],
+    doorStatePos1Data = [],
+    doorStatePos2Data = [];
   var data = {
     labels: timeData,
     datasets: [
@@ -26,6 +28,33 @@ $(document).ready(function () {
         pointHoverBackgroundColor: "rgba(24, 120, 240, 1)",
         pointHoverBorderColor: "rgba(24, 120, 240, 1)",
         data: cabinPosData
+      }
+    ]
+  }
+  var doorPosdata = {
+    labels: timeData,
+    datasets: [
+      {
+        fill: false,
+        label: 'Door State Position 1',
+        yAxisID: 'doorStatePos1',
+        borderColor: "rgba(255, 204, 0, 1)",
+        pointBoarderColor: "rgba(255, 204, 0, 1)",
+        backgroundColor: "rgba(255, 204, 0, 0.4)",
+        pointHoverBackgroundColor: "rgba(255, 204, 0, 1)",
+        pointHoverBorderColor: "rgba(255, 204, 0, 1)",
+        data: doorStatePos1Data
+      },
+      {
+        fill: false,
+        label: 'Door State Position 2',
+        yAxisID: 'doorStatePos2',
+        borderColor: "rgba(24, 120, 240, 1)",
+        pointBoarderColor: "rgba(24, 120, 240, 1)",
+        backgroundColor: "rgba(24, 120, 240, 0.4)",
+        pointHoverBackgroundColor: "rgba(24, 120, 240, 1)",
+        pointHoverBorderColor: "rgba(24, 120, 240, 1)",
+        data: doorStatePos2Data
       }
     ]
   }
@@ -56,14 +85,47 @@ $(document).ready(function () {
         }]
     }
   }
+  
+  var basicOption2 = {
+    title: {
+      display: true,
+      text: 'Elevator Real-time Door Position Data',
+      fontSize: 24
+    },
+    scales: {
+      yAxes: [{
+        id: 'doorStatePos1',
+        type: 'linear',
+        scaleLabel: {
+          labelString: 'Door State Position 1',
+          display: true
+        },
+        position: 'left',
+      }, {
+          id: 'doorStatePos2',
+          type: 'linear',
+          scaleLabel: {
+            labelString: 'Door State Position 2',
+            display: true
+          },
+          position: 'right'
+        }]
+    }
+  }
 
   //Get the context of the canvas element we want to select
   var ctx = document.getElementById("myChart").getContext("2d");
+  var ctx2 = document.getElementById("myChart2").getContext("2d");
   var optionsNoAnimation = { animation: false }
   var myLineChart = new Chart(ctx, {
     type: 'line',
     data: data,
     options: basicOption
+  });
+  var myLineChart2 = new Chart(ctx2, {
+    type: 'line',
+    data: doorPosdata,
+    options: basicOption2
   });
 
   var ws = new WebSocket('wss://' + location.host);
@@ -93,8 +155,12 @@ $(document).ready(function () {
       if (cabinPosData.length > maxLen) {
         cabinPosData.shift();
       }
+      doorStatePos1Data.push(obj.doorStatePos1);
+      doorStatePos2Data.push(obj.doorStatePos2);
 
       myLineChart.update();
+      
+      myLineChart2.update();
     } catch (err) {
       console.error(err);
     }
