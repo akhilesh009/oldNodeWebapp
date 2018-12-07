@@ -32,11 +32,12 @@ $(document).ready(function () {
     ]
   }
   var doorPosdata = {
-    labels:timeData,
+    yLabels: ["Opening", "Closing","Opened", "Closed", "Locked"],
+    xLabels:timeData,
     datasets: [
       {
         fill: false,
-        labels:["Opening", "Closing","Opened", "Closed", "Locked"],// label:'Door State Position 1',
+        label:'Door State Position 1',
         yAxisID: 'doorStatePos1',
         borderColor: "rgba(255, 204, 0, 1)",
         pointBoarderColor: "rgba(255, 204, 0, 1)",
@@ -47,8 +48,7 @@ $(document).ready(function () {
       },
       {
         fill: false,
-        labels:["Opening", "Closing","Opened", "Closed", "Locked"],
-        //label: 'Door State Position 2',
+        label: 'Door State Position 2',
         yAxisID: 'doorStatePos2',
         borderColor: "rgba(24, 120, 240, 1)",
         pointBoarderColor: "rgba(24, 120, 240, 1)",
