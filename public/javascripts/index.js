@@ -127,7 +127,7 @@ $(document).ready(function () {
   }
 
   var yLabels = {
-    0 : 'Opening', 2 : 'Closing', 4 : 'Opened', 6 : 'Closed', 8 : 'Locked'
+    -1 : 'Opening', -0.5 : 'Closing',  0: 'Opened', 0.5 : 'Closed', 1 : 'Locked'
   }
 
   //Get the context of the canvas element we want to select
