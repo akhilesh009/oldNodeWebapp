@@ -94,7 +94,9 @@ $(document).ready(function () {
       fontSize: 24
     },
     scales: {
-      yAxes: [{
+      yAxes: [
+      labels : ["Opening", "Closing","Opened", "Closed", "Locked"],
+      {
         id: 'doorStatePos1',
         type: 'linear',
         scaleLabel: {
