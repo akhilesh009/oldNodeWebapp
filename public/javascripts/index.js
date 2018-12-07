@@ -103,6 +103,10 @@ $(document).ready(function () {
           display: true
         },
         position: 'left',
+        ticks: {
+                      callback: function(value, index, values) {
+                          return yLabels[value];
+                      }
       }, 
       {
           id: 'doorStatePos2',
@@ -112,15 +116,19 @@ $(document).ready(function () {
             labelString: 'Door State Position 2',
             display: true
           },
-          position: 'right'
-      },
-      {
-        ticks: {
+          position: 'right',
+          ticks: {
                       callback: function(value, index, values) {
                           return yLabels[value];
                       }
-        }
       }
+      // {
+        // ticks: {
+                      // callback: function(value, index, values) {
+                          // return yLabels[value];
+                      // }
+        // }
+      // }
         ]
     }
   }
