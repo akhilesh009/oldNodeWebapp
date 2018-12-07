@@ -94,10 +94,10 @@ $(document).ready(function () {
     },
     scales: {
       yAxes: [
-      labels : ["Opening", "Closing","Opened", "Closed", "Locked"],
       {
         id: 'doorStatePos1',
         type: 'linear',
+        labels : ["Opening", "Closing","Opened", "Closed", "Locked"],
         scaleLabel: {
           labelString: 'Door State Position 1',
           display: true
@@ -106,6 +106,7 @@ $(document).ready(function () {
       }, {
           id: 'doorStatePos2',
           type: 'linear',
+          labels : ["Opening", "Closing","Opened", "Closed", "Locked"],
           scaleLabel: {
             labelString: 'Door State Position 2',
             display: true
