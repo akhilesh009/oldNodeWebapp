@@ -104,6 +104,10 @@ $(document).ready(function () {
         },
         position: 'left',
         ticks: {
+                      beginAtZero: true,
+                      min:0,
+                      max:4,
+                      stepSize : 1,
                       callback: function(value, index, values) {
                           return yLabels[value];
                       }
@@ -119,6 +123,10 @@ $(document).ready(function () {
           },
           position: 'right',
           ticks: {
+                      beginAtZero: true,
+                      min:0,
+                      max:4,
+                      stepSize : 1,
                       callback: function(value, index, values) {
                           return yLabels[value];
                       }
