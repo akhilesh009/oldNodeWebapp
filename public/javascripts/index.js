@@ -114,11 +114,13 @@ $(document).ready(function () {
           },
           position: 'right'
       },
-      ticks: {
-        beginAtZero: true,
-                    callback: function(value, index, values) {
-                        return yLabels[value];
-                    }
+      {
+        ticks: {
+          beginAtZero: true,
+                      callback: function(value, index, values) {
+                          return yLabels[value];
+                      }
+        }
       }
         ]
     }
