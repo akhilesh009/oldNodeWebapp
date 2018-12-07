@@ -107,6 +107,7 @@ $(document).ready(function () {
                       callback: function(value, index, values) {
                           return yLabels[value];
                       }
+        }
       }, 
       {
           id: 'doorStatePos2',
