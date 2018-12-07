@@ -113,28 +113,28 @@ $(document).ready(function () {
             display: true
           },
           position: 'right'
-      }
-        // ticks: {
-           // min: 0,
-           // max: 5,
-           // stepSize: 1,
-           // suggestedMin: 0.5,
-           // suggestedMax: 5.5,
-           // callback: function(label, index, labels) {
-             // switch (label) {
-               // case 0:
-                 // return 'Opening';
-               // case 1:
-                 // return 'Closing';
-               // case 2:
-                 // return 'Opened';
-               // case 3:
-                 // return 'Closed';
-               // case 4:
-                 // return 'Locked';
-             // }
-           // }
-         // }
+      },
+        ticks: {
+           min: 0,
+           max: 4,
+           stepSize: 1,
+           suggestedMin: 0.5,
+           suggestedMax: 5.5,
+           callback: function(label, index, labels) {
+             switch (label) {
+               case 0:
+                 return 'Opening';
+               case 1:
+                 return 'Closing';
+               case 2:
+                 return 'Opened';
+               case 3:
+                 return 'Closed';
+               case 4:
+                 return 'Locked';
+             }
+           }
+         }
         ]
     }
   }
