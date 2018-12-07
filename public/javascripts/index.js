@@ -129,7 +129,7 @@ $(document).ready(function () {
                           // return yLabels[value];
                       // }
         // }
-      // }
+      }
         ]
     }
   }
