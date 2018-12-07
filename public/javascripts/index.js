@@ -97,43 +97,42 @@ $(document).ready(function () {
       {
         id: 'doorStatePos1',
         type: 'linear',
-        labels : ["Opening", "Closing","Opened", "Closed", "Locked"],
         scaleLabel: {
-          labelString: 'Door State Position 1',
+          labelString: ["Opening","Closing", "Opened", "Closed", "Locked"], //'Door State Position 1',
           display: true
         },
         position: 'left',
-      }, {
+      }, 
+      {
           id: 'doorStatePos2',
           type: 'linear',
-          labels : ["Opening", "Closing","Opened", "Closed", "Locked"],
           scaleLabel: {
-            labelString: 'Door State Position 2',
+            labelString: ["Opening","Closing", "Opened", "Closed", "Locked"], //'Door State Position 2',
             display: true
           },
           position: 'right'
-        },
-        ticks: {
-           min: 0,
-           max: 5,
-           stepSize: 1,
-           suggestedMin: 0.5,
-           suggestedMax: 5.5,
-           callback: function(label, index, labels) {
-             switch (label) {
-               case 0:
-                 return 'Opening';
-               case 1:
-                 return 'Closing';
-               case 2:
-                 return 'Opened';
-               case 3:
-                 return 'Closed';
-               case 4:
-                 return 'Locked';
-             }
-           }
-         }
+      }
+        // ticks: {
+           // min: 0,
+           // max: 5,
+           // stepSize: 1,
+           // suggestedMin: 0.5,
+           // suggestedMax: 5.5,
+           // callback: function(label, index, labels) {
+             // switch (label) {
+               // case 0:
+                 // return 'Opening';
+               // case 1:
+                 // return 'Closing';
+               // case 2:
+                 // return 'Opened';
+               // case 3:
+                 // return 'Closed';
+               // case 4:
+                 // return 'Locked';
+             // }
+           // }
+         // }
         ]
     }
   }
