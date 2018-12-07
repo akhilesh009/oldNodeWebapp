@@ -32,8 +32,7 @@ $(document).ready(function () {
     ]
   }
   var doorPosdata = {
-    yLabels: ["Opening", "Closing","Opened", "Closed", "Locked"],
-    xLabels:timeData,
+    labels:timeData,
     datasets: [
       {
         fill: false,
