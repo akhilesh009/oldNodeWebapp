@@ -97,8 +97,9 @@ $(document).ready(function () {
       {
         id: 'doorStatePos1',
         type: 'linear',
+        labels:["Opening","Closing", "Opened", "Closed", "Locked"],
         scaleLabel: {
-          labelString: ["Opening","Closing", "Opened", "Closed", "Locked"], //'Door State Position 1',
+          labelString: 'Door State Position 1',
           display: true
         },
         position: 'left',
@@ -106,8 +107,9 @@ $(document).ready(function () {
       {
           id: 'doorStatePos2',
           type: 'linear',
+          labels : ["Opening","Closing", "Opened", "Closed", "Locked"],
           scaleLabel: {
-            labelString: ["Opening","Closing", "Opened", "Closed", "Locked"], //'Door State Position 2',
+            labelString: 'Door State Position 2',
             display: true
           },
           position: 'right'
