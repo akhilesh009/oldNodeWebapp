@@ -295,18 +295,6 @@ $(document).ready(function () {
 
       }
 
-      // {
-
-        // ticks: {
-
-                      // callback: function(value, index, values) {
-
-                          // return yLabels[value];
-
-                      // }
-
-        // }
-
       }
 
         ]
@@ -360,7 +348,7 @@ $(document).ready(function () {
 
                       }
 
-      }
+          }
 
       }
 
@@ -374,10 +362,11 @@ $(document).ready(function () {
 
   var yLabels = {
      1 : 'Opening', 2 : 'Closing',  3 : 'Opened', 4 : 'Closed', 5 :'Locked'
-  }
+  };
+  
   var yDrvLabels = {
     1 : 'Acceleration', 2 : 'FullSpeed',  3 : 'Standing', 4 : 'Braking'
-  }
+  };
 
   //Get the context of the canvas element we want to select
 
@@ -455,57 +444,49 @@ $(document).ready(function () {
         elevatorSineData.shift();
 
       }
-
- 
-
       if (obj.cabinPos) {
-
         cabinPosData.push(obj.cabinPos);
-
       }
-
       if (cabinPosData.length > maxLen) {
-
         cabinPosData.shift();
-
       }
   
   
   if(obj.doorStatePos1) {
-  if(obj.doorStatePos1 === 'Opening') {
-doorStatePos1Data.push(1);
-}
-  else if(obj.doorStatePos1 === 'Closing') {
-doorStatePos1Data.push(2);  
-  }
-  else if(obj.doorStatePos1 === 'Opened') {
-doorStatePos1Data.push(3);  
-  }
-  else if(obj.doorStatePos1 === 'Closed') {
-doorStatePos1Data.push(4);  
-  }
-  else if(obj.doorStatePos1 === 'Locked') {
-doorStatePos1Data.push(5);  
-  }
+    if(obj.doorStatePos1 === 'Opening') {
+      doorStatePos1Data.push(1);
+    }
+    else if(obj.doorStatePos1 === 'Closing') {
+      doorStatePos1Data.push(2);  
+    }
+    else if(obj.doorStatePos1 === 'Opened') {
+      doorStatePos1Data.push(3);  
+    }
+    else if(obj.doorStatePos1 === 'Closed') {
+      doorStatePos1Data.push(4);  
+    }
+    else if(obj.doorStatePos1 === 'Locked') {
+      doorStatePos1Data.push(5);  
+    }
    
   }
   
   if(obj.doorStatePos2) {
-  if(obj.doorStatePos2 === 'Opening') {
-doorStatePos2Data.push(1);
-  }
-  else if(obj.doorStatePos2 === 'Closing') {
-doorStatePos2Data.push(2);  
-  }
-  else if(obj.doorStatePos2 === 'Opened') {
-doorStatePos2Data.push(3);  
-  }
-  else if(obj.doorStatePos2 === 'Closed') {
-doorStatePos2Data.push(4);  
-  }
-  else if(obj.doorStatePos2 === 'Locked') {
-doorStatePos2Data.push(5);
-  }
+    if(obj.doorStatePos2 === 'Opening') {
+      doorStatePos2Data.push(1);
+    }
+    else if(obj.doorStatePos2 === 'Closing') {
+      doorStatePos2Data.push(2);  
+    }
+    else if(obj.doorStatePos2 === 'Opened') {
+      doorStatePos2Data.push(3);  
+    }
+    else if(obj.doorStatePos2 === 'Closed') {
+      doorStatePos2Data.push(4);  
+    }
+    else if(obj.doorStatePos2 === 'Locked') {
+      doorStatePos2Data.push(5);
+    }
   }
 
   if(obj.drivePhase) {
