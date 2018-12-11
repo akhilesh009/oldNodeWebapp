@@ -131,7 +131,7 @@ $(document).ready(function () {
 
         label:'Elevator Drive Phase',
 
-        yAxisID: 'doorStatePos1',
+        yAxisID: 'drivePhase1',
 
         borderColor: "rgba(255, 204, 0, 1)",
 
@@ -150,7 +150,6 @@ $(document).ready(function () {
 
   }
 
- 
 
   var basicOption = {
 
