@@ -330,7 +330,7 @@ $(document).ready(function () {
       yAxes: [
       {
 
-          id: 'doorDrvPhs',
+          id: 'drivePhase',
 
           type: 'linear',
 
@@ -376,7 +376,7 @@ $(document).ready(function () {
      1 : 'Opening', 2 : 'Closing',  3 : 'Opened', 4 : 'Closed', 5 :'Locked'
   }
   var yDrvLabels = {
-    0 : 'Acceleration', 1 : 'FullSpeed',  2 : 'Standing', 3 : 'Braking'
+    1 : 'Acceleration', 2 : 'FullSpeed',  3 : 'Standing', 4 : 'Braking'
   }
 
   //Get the context of the canvas element we want to select
@@ -510,16 +510,16 @@ doorStatePos2Data.push(5);
 
   if(obj.drivePhase) {
     if(obj.drivePhase === 'Acceleration') {
-      doorDrvPhsData.push(0);
-    }
-    else if(obj.drivePhase === 'FullSpeed') {
       doorDrvPhsData.push(1);
     }
-    else if(obj.drivePhase === 'Standing') {
+    else if(obj.drivePhase === 'FullSpeed') {
       doorDrvPhsData.push(2);
     }
-    else if(obj.drivePhase === 'Braking') {
+    else if(obj.drivePhase === 'Standing') {
       doorDrvPhsData.push(3);
+    }
+    else if(obj.drivePhase === 'Braking') {
+      doorDrvPhsData.push(4);
     }
 
   }
