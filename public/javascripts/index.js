@@ -146,9 +146,6 @@ $(document).ready(function () {
         data: doorDrvPhsData
 
       }
-
-      }
-
     ]
 
   }
@@ -163,7 +160,7 @@ $(document).ready(function () {
 
       text: 'Elevator Real-time Data',
 
-      fontSize: 36
+      fontSize: 16
 
     },
 
@@ -217,7 +214,7 @@ $(document).ready(function () {
 
       text: 'Elevator Real-time Door Position Data',
 
-      fontSize: 24
+      fontSize: 16
 
     },
 
