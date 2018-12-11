@@ -239,7 +239,7 @@ $(document).ready(function () {
 
         ticks: {
 
-                      beginAtZero: false,
+                      beginAtZero: true,
 
                       min:0,
 
@@ -277,7 +277,7 @@ $(document).ready(function () {
 
           ticks: {
 
-                      beginAtZero: false,
+                      beginAtZero: true,
 
                       min:0,
 
@@ -333,11 +333,11 @@ $(document).ready(function () {
 
           ticks: {
 
-                      beginAtZero: false,
+                      beginAtZero: true,
 
                       min:0,
 
-                      max:3,
+                      max:4,
 
                       stepSize : 1,
 
