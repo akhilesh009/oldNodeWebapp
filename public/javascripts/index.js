@@ -330,25 +330,25 @@ $(document).ready(function () {
 
           },
 
-          position: 'left',
+          position: 'left'
 
-          ticks: {
+          // ticks: {
 
-                      beginAtZero: true,
+                      // beginAtZero: true,
 
-                      min:0,
+                      // min:0,
 
-                      max:3,
+                      // max:3,
 
-                      stepSize : 1,
+                      // stepSize : 1,
 
-                      callback: function(value, index, values) {
+                      // callback: function(value, index, values) {
 
-                          return yDrvLabels[value];
+                          // return yDrvLabels[value];
 
-                      }
+                      // }
 
-          }
+          // }
 
       }
 
@@ -364,9 +364,9 @@ $(document).ready(function () {
      1 : 'Opening', 2 : 'Closing',  3 : 'Opened', 4 : 'Closed', 5 :'Locked'
   };
   
-  var yDrvLabels = {
-    1 : 'Acceleration', 2 : 'FullSpeed',  3 : 'Standing', 4 : 'Braking'
-  };
+  // var yDrvLabels = {
+    // 1 : 'Acceleration', 2 : 'FullSpeed',  3 : 'Standing', 4 : 'Braking'
+  // };
 
   //Get the context of the canvas element we want to select
 
