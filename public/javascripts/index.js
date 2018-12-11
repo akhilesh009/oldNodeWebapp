@@ -432,23 +432,23 @@ $(document).ready(function () {
 
       // only keep no more than 50 points in the line chart
 
-      const maxLen = 50;
+      // const maxLen = 50;
 
-      var len = timeData.length;
+      // var len = timeData.length;
 
-      if (len > maxLen) {
+      // if (len > maxLen) {
 
-        timeData.shift();
+        // timeData.shift();
 
-        elevatorSineData.shift();
+        // elevatorSineData.shift();
 
-      }
-      if (obj.cabinPos) {
-        cabinPosData.push(obj.cabinPos);
-      }
-      if (cabinPosData.length > maxLen) {
-        cabinPosData.shift();
-      }
+      // }
+      // if (obj.cabinPos) {
+        // cabinPosData.push(obj.cabinPos);
+      // }
+      // if (cabinPosData.length > maxLen) {
+        // cabinPosData.shift();
+      // }
   
   
   // if(obj.doorStatePos1) {
