@@ -8,7 +8,7 @@ $(document).ready(function () {
 
     doorStatePos1Data = [],
 
-    doorStatePos2Data = [];
+    doorStatePos2Data = [],
     doorDrvPhsData = [];
 
   var data = {
