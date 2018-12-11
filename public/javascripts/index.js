@@ -131,7 +131,7 @@ $(document).ready(function () {
 
         label:'Elevator Drive Phase',
 
-        yAxisID: 'drivePhase1',
+        yAxisID: 'drivePhase',
 
         borderColor: "rgba(255, 204, 0, 1)",
 
@@ -202,8 +202,6 @@ $(document).ready(function () {
     }
 
   }
-
- 
 
   var basicOption2 = {
 
@@ -293,15 +291,16 @@ $(document).ready(function () {
 
                       }
 
-      }
+          }
 
       }
 
-        ]
+    ]
 
     }
 
   }
+  
   var basicOption3 = {
 
     title: {
@@ -332,23 +331,23 @@ $(document).ready(function () {
 
           position: 'left'
 
-          // ticks: {
+          ticks: {
 
-                      // beginAtZero: true,
+                      beginAtZero: true,
 
-                      // min:0,
+                      min:0,
 
-                      // max:3,
+                      max:3,
 
-                      // stepSize : 1,
+                      stepSize : 1,
 
-                      // callback: function(value, index, values) {
+                      callback: function(value, index, values) {
 
-                          // return yDrvLabels[value];
+                          return yLabels2[value];
 
-                      // }
+                      }
 
-          // }
+          }
 
       }
 
@@ -358,15 +357,13 @@ $(document).ready(function () {
 
   }
 
- 
-
   var yLabels = {
      1 : 'Opening', 2 : 'Closing',  3 : 'Opened', 4 : 'Closed', 5 :'Locked'
-  };
+  }
   
-  // var yDrvLabels = {
-    // 1 : 'Acceleration', 2 : 'FullSpeed',  3 : 'Standing', 4 : 'Braking'
-  // };
+  var yLabels2 = {
+    1 : 'Acceleration', 2 : 'FullSpeed',  3 : 'Standing', 4 : 'Braking'
+  }
 
   //Get the context of the canvas element we want to select
 
