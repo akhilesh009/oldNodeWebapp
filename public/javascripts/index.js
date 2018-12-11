@@ -329,7 +329,7 @@ $(document).ready(function () {
 
           },
 
-          position: 'left'
+          position: 'left',
 
           ticks: {
 
