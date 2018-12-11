@@ -9,6 +9,7 @@ $(document).ready(function () {
     doorStatePos1Data = [],
 
     doorStatePos2Data = [];
+    doorDrvPhsData = [];
 
   var data = {
 
@@ -111,6 +112,40 @@ $(document).ready(function () {
         pointHoverBorderColor: "rgba(24, 120, 240, 1)",
 
         data: doorStatePos2Data
+
+      }
+
+    ]
+
+  }
+  
+  var drivePhasedata = {
+
+    labels:timeData,
+
+    datasets: [
+
+      {
+
+        fill: false,
+
+        label:'Elevator Drive Phase',
+
+        yAxisID: 'doorStatePos1',
+
+        borderColor: "rgba(255, 204, 0, 1)",
+
+        pointBoarderColor: "rgba(255, 204, 0, 1)",
+
+        backgroundColor: "rgba(255, 204, 0, 0.4)",
+
+        pointHoverBackgroundColor: "rgba(255, 204, 0, 1)",
+
+        pointHoverBorderColor: "rgba(255, 204, 0, 1)",
+
+        data: doorDrvPhsData
+
+      }
 
       }
 
@@ -283,20 +318,76 @@ $(document).ready(function () {
     }
 
   }
+  var basicOption3 = {
+
+    title: {
+
+      display: true,
+
+      text: 'Elevator Real-time Drive Phase Data',
+
+      fontSize: 16
+
+    },
+
+    scales: {
+      yAxes: [
+      {
+
+          id: 'doorDrvPhs',
+
+          type: 'linear',
+
+          scaleLabel: {
+
+            labelString: 'Door Drive Phase',
+
+            display: true
+
+          },
+
+          position: 'left',
+
+          ticks: {
+
+                      beginAtZero: true,
+
+                      min:0,
+
+                      max:3,
+
+                      stepSize : 1,
+
+                      callback: function(value, index, values) {
+
+                          return yDrvLabels[value];
+
+                      }
+
+      }
+
+      }
+
+        ]
+
+    }
+
+  }
 
  
 
   var yLabels = {
-
      1 : 'Opening', 2 : 'Closing',  3 : 'Opened', 4 : 'Closed', 5 :'Locked'
-
+  }
+  var yDrvLabels = {
+    0 : 'Acceleration', 1 : 'FullSpeed',  2 : 'Standing', 3 : 'Braking'
   }
 
   //Get the context of the canvas element we want to select
 
   var ctx = document.getElementById("myChart").getContext("2d");
-
   var ctx2 = document.getElementById("myChart2").getContext("2d");
+  var ctx3 = document.getElementById("myChart3").getContext("2d");
 
   var optionsNoAnimation = { animation: false }
 
@@ -319,8 +410,15 @@ $(document).ready(function () {
     options: basicOption2
 
   });
+  var myLineChart3 = new Chart(ctx3, {
 
- 
+    type: 'line',
+
+    data: drivePhasedata,
+
+    options: basicOption3
+
+  });
 
   var ws = new WebSocket('wss://' + location.host);
 
@@ -414,21 +512,29 @@ doorStatePos2Data.push(5);
   }
   }
 
-      //doorStatePos1Data.push(obj.doorStatePos1);
-
-      //doorStatePos2Data.push(obj.doorStatePos2);
-
- 
-
-      myLineChart.update();   
-
-      myLineChart2.update();
-
-    } catch (err) {
-
-      console.error(err);
-
+  if(obj.drivePhase) {
+    if(obj.drivePhase === 'Acceleration') {
+      doorDrvPhsData.push(0);
     }
+    else if(obj.drivePhase === 'FullSpeed') {
+      doorDrvPhsData.push(1);
+    }
+    else if(obj.drivePhase === 'Standing') {
+      doorDrvPhsData.push(2);
+    }
+    else if(obj.drivePhase === 'Braking') {
+      doorDrvPhsData.push(3);
+    }
+
+  }
+
+  myLineChart.update();
+  myLineChart2.update();
+  myLineChart3.update();
+
+  } catch (err) {
+    console.error(err);
+  }
 
   }
 
