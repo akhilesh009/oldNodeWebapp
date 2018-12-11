@@ -432,43 +432,24 @@ $(document).ready(function () {
 
       // only keep no more than 50 points in the line chart
 
-      // const maxLen = 50;
+      const maxLen = 50;
 
-      // var len = timeData.length;
+      var len = timeData.length;
 
-      // if (len > maxLen) {
+      if (len > maxLen) {
 
-        // timeData.shift();
+        timeData.shift();
 
-        // elevatorSineData.shift();
+        elevatorSineData.shift();
 
-      // }
-      // if (obj.cabinPos) {
-        // cabinPosData.push(obj.cabinPos);
-      // }
-      // if (cabinPosData.length > maxLen) {
-        // cabinPosData.shift();
-      // }
+      }
+      if (obj.cabinPos) {
+        cabinPosData.push(obj.cabinPos);
+      }
+      if (cabinPosData.length > maxLen) {
+        cabinPosData.shift();
+      }
   
-  
-  // if(obj.doorStatePos1) {
-    // if(obj.doorStatePos1 === 'Opening') {
-      // doorStatePos1Data.push(1);
-    // }
-    // else if(obj.doorStatePos1 === 'Closing') {
-      // doorStatePos1Data.push(2);  
-    // }
-    // else if(obj.doorStatePos1 === 'Opened') {
-      // doorStatePos1Data.push(3);  
-    // }
-    // else if(obj.doorStatePos1 === 'Closed') {
-      // doorStatePos1Data.push(4);  
-    // }
-    // else if(obj.doorStatePos1 === 'Locked') {
-      // doorStatePos1Data.push(5);  
-    // }
-   
-  // }
   if(obj.doorStatePos1) {
     if(obj.doorStatePos1 === 'Opening') {
       doorStatePos1Data.push(0);
@@ -487,24 +468,7 @@ $(document).ready(function () {
     }
    
   }
-  
-  // if(obj.doorStatePos2) {
-    // if(obj.doorStatePos2 === 'Opening') {
-      // doorStatePos2Data.push(1);
-    // }
-    // else if(obj.doorStatePos2 === 'Closing') {
-      // doorStatePos2Data.push(2);  
-    // }
-    // else if(obj.doorStatePos2 === 'Opened') {
-      // doorStatePos2Data.push(3);  
-    // }
-    // else if(obj.doorStatePos2 === 'Closed') {
-      // doorStatePos2Data.push(4);  
-    // }
-    // else if(obj.doorStatePos2 === 'Locked') {
-      // doorStatePos2Data.push(5);
-    // }
-  // }
+
   if(obj.doorStatePos2) {
     if(obj.doorStatePos2 === 'Opening') {
       doorStatePos2Data.push(0);
@@ -523,22 +487,6 @@ $(document).ready(function () {
     }
   }
 
-  // if(obj.drivePhase) {
-    // if(obj.drivePhase === 'Acceleration') {
-      // doorDrvPhsData.push(1);
-    // }
-    // else if(obj.drivePhase === 'FullSpeed') {
-      // doorDrvPhsData.push(2);
-    // }
-    // else if(obj.drivePhase === 'Standing') {
-      // doorDrvPhsData.push(3);
-    // }
-    // else if(obj.drivePhase === 'Braking') {
-      // doorDrvPhsData.push(4);
-    // }
-
-  // }
-  
   if(obj.drivePhase) {
     if(obj.drivePhase === 'Acceleration') {
       doorDrvPhsData.push(0);
