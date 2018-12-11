@@ -337,7 +337,7 @@ $(document).ready(function () {
 
                       min:0,
 
-                      max:4,
+                      max:3,
 
                       stepSize : 1,
 
