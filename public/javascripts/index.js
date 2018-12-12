@@ -370,8 +370,8 @@ $(document).ready(function () {
   //Get the context of the canvas element we want to select
 
   var ctx = document.getElementById("myChart").getContext("2d");
-  var ctx2 = document.getElementById("myChart2").getContext("2d");
-  var ctx3 = document.getElementById("myChart3").getContext("2d");
+  //var ctx2 = document.getElementById("myChart2").getContext("2d");
+  //var ctx3 = document.getElementById("myChart3").getContext("2d");
 
   var optionsNoAnimation = { animation: false }
 
@@ -385,24 +385,24 @@ $(document).ready(function () {
 
   });
 
-  var myLineChart2 = new Chart(ctx2, {
+  // var myLineChart2 = new Chart(ctx2, {
 
-    type: 'line',
+    // type: 'line',
 
-    data: doorPosdata,
+    // data: doorPosdata,
 
-    options: basicOption2
+    // options: basicOption2
 
-  });
-  var myLineChart3 = new Chart(ctx3, {
+  // });
+  // var myLineChart3 = new Chart(ctx3, {
 
-    type: 'line',
+    // type: 'line',
 
-    data: drivePhasedata,
+    // data: drivePhasedata,
 
-    options: basicOption3
+    // options: basicOption3
 
-  });
+  // });
 
   var ws = new WebSocket('wss://' + location.host);
 
@@ -504,8 +504,8 @@ $(document).ready(function () {
   }
 
   myLineChart.update();
-  myLineChart2.update();
-  myLineChart3.update();
+  //myLineChart2.update();
+  //myLineChart3.update();
 
   } catch (err) {
     console.error(err);
