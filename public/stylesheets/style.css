@@ -14,11 +14,12 @@ a {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #9370DB; /* #333 */
   overflow: hidden;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  height: 20%;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -47,7 +48,7 @@ a {
   width: 200px;
   position: fixed;
   z-index: 1;
-  top: 0;
+  top: 46;
   left: 0;
   background-color: #111;
   overflow-x: hidden;
