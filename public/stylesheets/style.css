@@ -19,6 +19,13 @@ a {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 396px;
+  text-decoration: none;
+  font-size: 17px;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
