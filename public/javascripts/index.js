@@ -179,7 +179,7 @@ $('.nav ul li:first').addClass('active');
 
         label: 'Elevator Sine',
 
-        yAxisID: 'elevatorSine1',
+        yAxisID: 'elevatorSine',
 
         borderColor: "rgba(255, 204, 0, 1)",
 
@@ -201,7 +201,7 @@ $('.nav ul li:first').addClass('active');
 
         label: 'Elevator Cabin Position',
 
-        yAxisID: 'cabinPos1',
+        yAxisID: 'cabinPos',
 
         borderColor: "rgba(24, 120, 240, 1)",
 
@@ -234,7 +234,7 @@ $('.nav ul li:first').addClass('active');
 
         label:'Door State Position 1',
 
-        yAxisID: 'doorStatePos1Menu',
+        yAxisID: 'doorStatePos1',
 
         borderColor: "rgba(255, 204, 0, 1)",
 
@@ -256,7 +256,7 @@ $('.nav ul li:first').addClass('active');
 
         label: 'Door State Position 2',
 
-        yAxisID: 'doorStatePos2Menu',
+        yAxisID: 'doorStatePos2',
 
         borderColor: "rgba(24, 120, 240, 1)",
 
@@ -290,7 +290,7 @@ $('.nav ul li:first').addClass('active');
 
         label:'Elevator Drive Phase',
 
-        yAxisID: 'drivePhaseMenu',
+        yAxisID: 'drivePhase',
 
         borderColor: "rgba(255, 204, 0, 1)",
 
@@ -538,7 +538,7 @@ $('.nav ul li:first').addClass('active');
 
       yAxes: [{
 
-        id: 'elevatorSineMenu',
+        id: 'elevatorSine',
 
         type: 'linear',
 
@@ -554,7 +554,7 @@ $('.nav ul li:first').addClass('active');
 
       }, {
 
-          id: 'cabinPosMenu',
+          id: 'cabinPos',
 
           type: 'linear',
 
@@ -593,7 +593,7 @@ $('.nav ul li:first').addClass('active');
 
       {
 
-        id: 'doorStatePos1Menu',
+        id: 'doorStatePos1',
 
         type: 'linear',
 
@@ -631,7 +631,7 @@ $('.nav ul li:first').addClass('active');
 
       {
 
-          id: 'doorStatePos2Menu',
+          id: 'doorStatePos2',
 
           type: 'linear',
 
@@ -690,7 +690,7 @@ $('.nav ul li:first').addClass('active');
       yAxes: [
       {
 
-          id: 'drivePhaseMenu',
+          id: 'drivePhase',
 
           type: 'linear',
 
