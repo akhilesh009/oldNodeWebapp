@@ -359,58 +359,7 @@ $('.nav ul li:first').addClass('active');
 
   }
   
-  var basicOption4 = {
-    responsive:false,
-    maintainAspectRatio: false,
-    title: {
-
-      display: true,
-
-      text: 'Elevator Real-time Data',
-
-      fontSize: 16
-
-    },
-
-    scales: {
-
-      yAxes: [{
-
-        id: 'elevatorSineMenu',
-
-        type: 'linear',
-
-        scaleLabel: {
-
-          labelString: 'Elevator Sine',
-
-          display: true
-
-        },
-
-        position: 'left',
-
-      }, {
-
-          id: 'cabinPosMenu',
-
-          type: 'linear',
-
-          scaleLabel: {
-
-            labelString: 'Elevator Cabin Position',
-
-            display: true
-
-          },
-
-          position: 'right'
-
-        }]
-
-    }
-
-  }
+  
 
   var basicOption2 = {
     responsive:false,
@@ -567,6 +516,216 @@ $('.nav ul li:first').addClass('active');
     }
 
   }
+  
+  var basicOption4 = {
+    responsive:false,
+    maintainAspectRatio: false,
+    title: {
+
+      display: true,
+
+      text: 'Elevator Real-time Data',
+
+      fontSize: 16
+
+    },
+
+    scales: {
+
+      yAxes: [{
+
+        id: 'elevatorSineMenu',
+
+        type: 'linear',
+
+        scaleLabel: {
+
+          labelString: 'Elevator Sine',
+
+          display: true
+
+        },
+
+        position: 'left',
+
+      }, {
+
+          id: 'cabinPosMenu',
+
+          type: 'linear',
+
+          scaleLabel: {
+
+            labelString: 'Elevator Cabin Position',
+
+            display: true
+
+          },
+
+          position: 'right'
+
+        }]
+
+    }
+
+  }
+  var basicOption5 = {
+    responsive:false,
+    maintainAspectRatio: false,
+    title: {
+
+      display: true,
+
+      text: 'Elevator Real-time Door Position Data',
+
+      fontSize: 16
+
+    },
+
+    scales: {
+
+      yAxes: [
+
+      {
+
+        id: 'doorStatePos1Menu',
+
+        type: 'linear',
+
+        labels:["Opening","Closing", "Opened", "Closed", "Locked"],
+
+        scaleLabel: {
+
+          labelString: 'Door State Position 1',
+
+          display: true
+
+        },
+
+        position: 'left',
+
+        ticks: {
+
+                      beginAtZero: true,
+
+                      min:0,
+
+                      max:4,
+
+                      stepSize : 1,
+
+                      callback: function(value, index, values) {
+
+                          return yLabels[value];
+
+                      }
+
+        }
+
+      },
+
+      {
+
+          id: 'doorStatePos2Menu',
+
+          type: 'linear',
+
+          labels : ["Opening","Closing", "Opened", "Closed", "Locked"],
+
+          scaleLabel: {
+
+            labelString: 'Door State Position 2',
+
+            display: true
+
+          },
+
+          position: 'right',
+
+          ticks: {
+
+                      beginAtZero: true,
+
+                      min:0,
+
+                      max:4,
+
+                      stepSize : 1,
+
+                      callback: function(value, index, values) {
+
+                          return yLabels[value];
+
+                      }
+
+          }
+
+      }
+
+    ]
+
+    }
+
+  }
+  
+  var basicOption6 = {
+    responsive:false,
+    maintainAspectRatio: false,
+    title: {
+
+      display: true,
+
+      text: 'Elevator Real-time Drive Phase Data',
+
+      fontSize: 16
+
+    },
+
+    scales: {
+      yAxes: [
+      {
+
+          id: 'drivePhaseMenu',
+
+          type: 'linear',
+
+          scaleLabel: {
+
+            labelString: 'Door Drive Phase',
+
+            display: true
+
+          },
+
+          position: 'left',
+
+          ticks: {
+
+                      beginAtZero: true,
+
+                      min:0,
+
+                      max:3,
+
+                      stepSize : 1,
+
+                      callback: function(value, index, values) {
+
+                          return yLabels2[value];
+
+                      }
+
+          }
+
+      }
+
+        ]
+
+    }
+
+  }
+  
+  
 
   var yLabels = {
      // 1 : 'Opening', 2 : 'Closing',  3 : 'Opened', 4 : 'Closed', 5 :'Locked'
@@ -633,7 +792,7 @@ $('.nav ul li:first').addClass('active');
 
      data: doorPosMenudata,
 
-     options: basicOption2
+     options: basicOption5
 
    });
    var myLineChart6 = new Chart(ctx6, {
@@ -642,7 +801,7 @@ $('.nav ul li:first').addClass('active');
 
      data: drivePhasedataMenu,
 
-     options: basicOption3
+     options: basicOption6
 
    });
 
