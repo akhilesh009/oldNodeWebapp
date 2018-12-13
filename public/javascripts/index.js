@@ -163,7 +163,7 @@ $('.nav ul li:first').addClass('active');
 
 
   var basicOption = {
-    responsive:true,
+    responsive:false,
     maintainAspectRatio: false,
     title: {
 
