@@ -517,58 +517,59 @@ $('.nav ul li:first').addClass('active');
 
   }
   
-  // var basicOption4 = {
-    // responsive:false,
-    // maintainAspectRatio: false,
-    // title: {
+  var basicOption4 = {
+    responsive:false,
+    maintainAspectRatio: false,
+    title: {
 
-      // display: true,
+      display: true,
 
-      // text: 'Elevator Real-time Data',
+      text: 'Elevator Real-time Data',
 
-      // fontSize: 16
+      fontSize: 16
 
-    // },
+    },
 
-    // scales: {
+    scales: {
 
-      // yAxes: [{
+      yAxes: [{
 
-        // id: 'elevatorSineMenu',
+        id: 'elevatorSineMenu',
 
-        // type: 'linear',
+        type: 'linear',
 
-        // scaleLabel: {
+        scaleLabel: {
 
-          // labelString: 'Elevator Sine',
+          labelString: 'Elevator Sine',
 
-          // display: true
+          display: true
 
-        // },
+        },
 
-        // position: 'left',
+        position: 'left',
 
-      // }, {
+      }, {
 
-          // id: 'cabinPosMenu',
+          id: 'cabinPosMenu',
 
-          // type: 'linear',
+          type: 'linear',
 
-          // scaleLabel: {
+          scaleLabel: {
 
-            // labelString: 'Elevator Cabin Position',
+            labelString: 'Elevator Cabin Position',
 
-            // display: true
+            display: true
 
-          // },
+          },
 
-          // position: 'right'
+          position: 'right'
 
-        // }]
+        }]
 
-    // }
+    }
 
-  // }
+  }
+  
   // var basicOption5 = {
     // responsive:false,
     // maintainAspectRatio: false,
@@ -742,7 +743,7 @@ $('.nav ul li:first').addClass('active');
   var ctx = document.getElementById("myChart").getContext("2d");
   var ctx2 = document.getElementById("myChart2").getContext("2d");
   var ctx3 = document.getElementById("myChart3").getContext("2d");
-  // var ctx4 = document.getElementById("myChart4").getContext("2d");
+  var ctx4 = document.getElementById("myChart4").getContext("2d");
   // var ctx5 = document.getElementById("myChart5").getContext("2d");
   // var ctx6 = document.getElementById("myChart6").getContext("2d");
 
@@ -777,15 +778,15 @@ $('.nav ul li:first').addClass('active');
 
    });
    // for menu charts
-   // var myLineChart4 = new Chart(ctx4, {
+   var myLineChart4 = new Chart(ctx4, {
 
-     // type: 'line',
+     type: 'line',
 
-     // data: cabinPosMenudata,
+     data: cabinPosMenudata,
 
-     // options: basicOption4
+     options: basicOption4
 
-   // });
+   });
    // var myLineChart5 = new Chart(ctx5, {
 
      // type: 'line',
@@ -907,7 +908,7 @@ $('.nav ul li:first').addClass('active');
   myLineChart.update();
   myLineChart2.update();
   myLineChart3.update();
-  //myLineChart4.update();
+  myLineChart4.update();
   //myLineChart5.update();
   //myLineChart6.update();
 
