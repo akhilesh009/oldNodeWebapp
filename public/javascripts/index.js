@@ -274,7 +274,7 @@ $('.nav ul li:first').addClass('active');
   }
   
   // for menu drive phase data
-  var drivePhasedata = {
+  var drivePhasedataMenu = {
 
     labels:timeData,
 
@@ -564,29 +564,30 @@ $('.nav ul li:first').addClass('active');
      options: basicOption3
 
    });
+   // for menu charts
    var myLineChart4 = new Chart(ctx4, {
 
      type: 'line',
 
-     data: data,
+     data: cabinPosMenudata,
 
-     options: basicOption2
+     options: basicOption
 
    });
    var myLineChart5 = new Chart(ctx5, {
 
      type: 'line',
 
-     data: drivePhasedata,
+     data: doorPosMenudata,
 
-     options: basicOption3
+     options: basicOption2
 
    });
    var myLineChart6 = new Chart(ctx6, {
 
      type: 'line',
 
-     data: drivePhasedata,
+     data: drivePhasedataMenu,
 
      options: basicOption3
 
