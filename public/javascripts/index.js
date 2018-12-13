@@ -517,213 +517,213 @@ $('.nav ul li:first').addClass('active');
 
   }
   
-  var basicOption4 = {
-    responsive:false,
-    maintainAspectRatio: false,
-    title: {
+  // var basicOption4 = {
+    // responsive:false,
+    // maintainAspectRatio: false,
+    // title: {
 
-      display: true,
+      // display: true,
 
-      text: 'Elevator Real-time Data',
+      // text: 'Elevator Real-time Data',
 
-      fontSize: 16
+      // fontSize: 16
 
-    },
+    // },
 
-    scales: {
+    // scales: {
 
-      yAxes: [{
+      // yAxes: [{
 
-        id: 'elevatorSineMenu',
+        // id: 'elevatorSineMenu',
 
-        type: 'linear',
+        // type: 'linear',
 
-        scaleLabel: {
+        // scaleLabel: {
 
-          labelString: 'Elevator Sine',
+          // labelString: 'Elevator Sine',
 
-          display: true
+          // display: true
 
-        },
+        // },
 
-        position: 'left',
+        // position: 'left',
 
-      }, {
+      // }, {
 
-          id: 'cabinPosMenu',
+          // id: 'cabinPosMenu',
 
-          type: 'linear',
+          // type: 'linear',
 
-          scaleLabel: {
+          // scaleLabel: {
 
-            labelString: 'Elevator Cabin Position',
+            // labelString: 'Elevator Cabin Position',
 
-            display: true
+            // display: true
 
-          },
+          // },
 
-          position: 'right'
+          // position: 'right'
 
-        }]
+        // }]
 
-    }
+    // }
 
-  }
-  var basicOption5 = {
-    responsive:false,
-    maintainAspectRatio: false,
-    title: {
+  // }
+  // var basicOption5 = {
+    // responsive:false,
+    // maintainAspectRatio: false,
+    // title: {
 
-      display: true,
+      // display: true,
 
-      text: 'Elevator Real-time Door Position Data',
+      // text: 'Elevator Real-time Door Position Data',
 
-      fontSize: 16
+      // fontSize: 16
 
-    },
+    // },
 
-    scales: {
+    // scales: {
 
-      yAxes: [
+      // yAxes: [
 
-      {
+      // {
 
-        id: 'doorStatePos1Menu',
+        // id: 'doorStatePos1Menu',
 
-        type: 'linear',
+        // type: 'linear',
 
-        labels:["Opening","Closing", "Opened", "Closed", "Locked"],
+        // labels:["Opening","Closing", "Opened", "Closed", "Locked"],
 
-        scaleLabel: {
+        // scaleLabel: {
 
-          labelString: 'Door State Position 1',
+          // labelString: 'Door State Position 1',
 
-          display: true
+          // display: true
 
-        },
+        // },
 
-        position: 'left',
+        // position: 'left',
 
-        ticks: {
+        // ticks: {
 
-                      beginAtZero: true,
+                      // beginAtZero: true,
 
-                      min:0,
+                      // min:0,
 
-                      max:4,
+                      // max:4,
 
-                      stepSize : 1,
+                      // stepSize : 1,
 
-                      callback: function(value, index, values) {
+                      // callback: function(value, index, values) {
 
-                          return yLabels[value];
+                          // return yLabels[value];
 
-                      }
+                      // }
 
-        }
+        // }
 
-      },
+      // },
 
-      {
+      // {
 
-          id: 'doorStatePos2Menu',
+          // id: 'doorStatePos2Menu',
 
-          type: 'linear',
+          // type: 'linear',
 
-          labels : ["Opening","Closing", "Opened", "Closed", "Locked"],
+          // labels : ["Opening","Closing", "Opened", "Closed", "Locked"],
 
-          scaleLabel: {
+          // scaleLabel: {
 
-            labelString: 'Door State Position 2',
+            // labelString: 'Door State Position 2',
 
-            display: true
+            // display: true
 
-          },
+          // },
 
-          position: 'right',
+          // position: 'right',
 
-          ticks: {
+          // ticks: {
 
-                      beginAtZero: true,
+                      // beginAtZero: true,
 
-                      min:0,
+                      // min:0,
 
-                      max:4,
+                      // max:4,
 
-                      stepSize : 1,
+                      // stepSize : 1,
 
-                      callback: function(value, index, values) {
+                      // callback: function(value, index, values) {
 
-                          return yLabels[value];
+                          // return yLabels[value];
 
-                      }
+                      // }
 
-          }
+          // }
 
-      }
+      // }
 
-    ]
+    // ]
 
-    }
+    // }
 
-  }
+  // }
   
-  var basicOption6 = {
-    responsive:false,
-    maintainAspectRatio: false,
-    title: {
+  // var basicOption6 = {
+    // responsive:false,
+    // maintainAspectRatio: false,
+    // title: {
 
-      display: true,
+      // display: true,
 
-      text: 'Elevator Real-time Drive Phase Data',
+      // text: 'Elevator Real-time Drive Phase Data',
 
-      fontSize: 16
+      // fontSize: 16
 
-    },
+    // },
 
-    scales: {
-      yAxes: [
-      {
+    // scales: {
+      // yAxes: [
+      // {
 
-          id: 'drivePhaseMenu',
+          // id: 'drivePhaseMenu',
 
-          type: 'linear',
+          // type: 'linear',
 
-          scaleLabel: {
+          // scaleLabel: {
 
-            labelString: 'Door Drive Phase',
+            // labelString: 'Door Drive Phase',
 
-            display: true
+            // display: true
 
-          },
+          // },
 
-          position: 'left',
+          // position: 'left',
 
-          ticks: {
+          // ticks: {
 
-                      beginAtZero: true,
+                      // beginAtZero: true,
 
-                      min:0,
+                      // min:0,
 
-                      max:3,
+                      // max:3,
 
-                      stepSize : 1,
+                      // stepSize : 1,
 
-                      callback: function(value, index, values) {
+                      // callback: function(value, index, values) {
 
-                          return yLabels2[value];
+                          // return yLabels2[value];
 
-                      }
+                      // }
 
-          }
+          // }
 
-      }
+      // }
 
-        ]
+        // ]
 
-    }
+    // }
 
-  }
+  // }
   
   
 
@@ -742,9 +742,9 @@ $('.nav ul li:first').addClass('active');
   var ctx = document.getElementById("myChart").getContext("2d");
   var ctx2 = document.getElementById("myChart2").getContext("2d");
   var ctx3 = document.getElementById("myChart3").getContext("2d");
-  var ctx4 = document.getElementById("myChart4").getContext("2d");
-  var ctx5 = document.getElementById("myChart5").getContext("2d");
-  var ctx6 = document.getElementById("myChart6").getContext("2d");
+  // var ctx4 = document.getElementById("myChart4").getContext("2d");
+  // var ctx5 = document.getElementById("myChart5").getContext("2d");
+  // var ctx6 = document.getElementById("myChart6").getContext("2d");
 
   var optionsNoAnimation = { animation: false }
 
@@ -777,33 +777,33 @@ $('.nav ul li:first').addClass('active');
 
    });
    // for menu charts
-   var myLineChart4 = new Chart(ctx4, {
+   // var myLineChart4 = new Chart(ctx4, {
 
-     type: 'line',
+     // type: 'line',
 
-     data: cabinPosMenudata,
+     // data: cabinPosMenudata,
 
-     options: basicOption4
+     // options: basicOption4
 
-   });
-   var myLineChart5 = new Chart(ctx5, {
+   // });
+   // var myLineChart5 = new Chart(ctx5, {
 
-     type: 'line',
+     // type: 'line',
 
-     data: doorPosMenudata,
+     // data: doorPosMenudata,
 
-     options: basicOption5
+     // options: basicOption5
 
-   });
-   var myLineChart6 = new Chart(ctx6, {
+   // });
+   // var myLineChart6 = new Chart(ctx6, {
 
-     type: 'line',
+     // type: 'line',
 
-     data: drivePhasedataMenu,
+     // data: drivePhasedataMenu,
 
-     options: basicOption6
+     // options: basicOption6
 
-   });
+   // });
 
   var ws = new WebSocket('wss://' + location.host);
 
@@ -907,9 +907,9 @@ $('.nav ul li:first').addClass('active');
   myLineChart.update();
   myLineChart2.update();
   myLineChart3.update();
-  myLineChart4.update();
-  myLineChart5.update();
-  myLineChart6.update();
+  //myLineChart4.update();
+  //myLineChart5.update();
+  //myLineChart6.update();
 
   } catch (err) {
     console.error(err);
