@@ -22,6 +22,7 @@ $('.nav ul li:first').addClass('active');
     doorStatePos2Data = [],
     doorDrvPhsData = [];
 
+  // For dashboard elevatorsine and cabinpos
   var data = {
 
     labels: timeData,
@@ -76,6 +77,61 @@ $('.nav ul li:first').addClass('active');
 
   }
 
+  // For cabinpos data menubar
+  var cabinPosMenudata = {
+
+    labels: timeData,
+
+    datasets: [
+
+      {
+
+        fill: false,
+
+        label: 'Elevator Sine',
+
+        yAxisID: 'elevatorSine1',
+
+        borderColor: "rgba(255, 204, 0, 1)",
+
+        pointBoarderColor: "rgba(255, 204, 0, 1)",
+
+        backgroundColor: "rgba(255, 204, 0, 0.4)",
+
+        pointHoverBackgroundColor: "rgba(255, 204, 0, 1)",
+
+        pointHoverBorderColor: "rgba(255, 204, 0, 1)",
+
+        data: elevatorSineData
+
+      },
+
+      {
+
+        fill: false,
+
+        label: 'Elevator Cabin Position',
+
+        yAxisID: 'cabinPos1',
+
+        borderColor: "rgba(24, 120, 240, 1)",
+
+        pointBoarderColor: "rgba(24, 120, 240, 1)",
+
+        backgroundColor: "rgba(24, 120, 240, 0.4)",
+
+        pointHoverBackgroundColor: "rgba(24, 120, 240, 1)",
+
+        pointHoverBorderColor: "rgba(24, 120, 240, 1)",
+
+        data: cabinPosData
+
+      }
+
+    ]
+
+  }
+  // for dashboard door position data
   var doorPosdata = {
 
     labels:timeData,
@@ -130,6 +186,62 @@ $('.nav ul li:first').addClass('active');
 
   }
   
+  // for menu door position data
+  var doorPosMenudata = {
+
+    labels:timeData,
+
+    datasets: [
+
+      {
+
+        fill: false,
+
+        label:'Door State Position 1',
+
+        yAxisID: 'doorStatePos1Menu',
+
+        borderColor: "rgba(255, 204, 0, 1)",
+
+        pointBoarderColor: "rgba(255, 204, 0, 1)",
+
+        backgroundColor: "rgba(255, 204, 0, 0.4)",
+
+        pointHoverBackgroundColor: "rgba(255, 204, 0, 1)",
+
+        pointHoverBorderColor: "rgba(255, 204, 0, 1)",
+
+        data: doorStatePos1Data
+
+      },
+
+      {
+
+        fill: false,
+
+        label: 'Door State Position 2',
+
+        yAxisID: 'doorStatePos2Menu',
+
+        borderColor: "rgba(24, 120, 240, 1)",
+
+        pointBoarderColor: "rgba(24, 120, 240, 1)",
+
+        backgroundColor: "rgba(24, 120, 240, 0.4)",
+
+        pointHoverBackgroundColor: "rgba(24, 120, 240, 1)",
+
+        pointHoverBorderColor: "rgba(24, 120, 240, 1)",
+
+        data: doorStatePos2Data
+
+      }
+
+    ]
+
+  }
+  
+  // for dashboard drive phase data
   var drivePhasedata = {
 
     labels:timeData,
@@ -143,6 +255,38 @@ $('.nav ul li:first').addClass('active');
         label:'Elevator Drive Phase',
 
         yAxisID: 'drivePhase',
+
+        borderColor: "rgba(255, 204, 0, 1)",
+
+        pointBoarderColor: "rgba(255, 204, 0, 1)",
+
+        backgroundColor: "rgba(255, 204, 0, 0.4)",
+
+        pointHoverBackgroundColor: "rgba(255, 204, 0, 1)",
+
+        pointHoverBorderColor: "rgba(255, 204, 0, 1)",
+
+        data: doorDrvPhsData
+
+      }
+    ]
+
+  }
+  
+  // for menu drive phase data
+  var drivePhasedata = {
+
+    labels:timeData,
+
+    datasets: [
+
+      {
+
+        fill: false,
+
+        label:'Elevator Drive Phase',
+
+        yAxisID: 'drivePhaseMenu',
 
         borderColor: "rgba(255, 204, 0, 1)",
 
