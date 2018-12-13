@@ -23,148 +23,148 @@ $('.nav ul li:first').addClass('active');
     doorDrvPhsData = [];
 
   // For dashboard elevatorsine and cabinpos
-  // var data = {
+  var data = {
 
-    // labels: timeData,
+    labels: timeData,
 
-    // datasets: [
+    datasets: [
 
-      // {
+      {
 
-        // fill: false,
+        fill: false,
 
-        // label: 'Elevator Sine',
+        label: 'Elevator Sine',
 
-        // yAxisID: 'elevatorSine',
+        yAxisID: 'elevatorSine',
 
-        // borderColor: "rgba(255, 204, 0, 1)",
+        borderColor: "rgba(255, 204, 0, 1)",
 
-        // pointBoarderColor: "rgba(255, 204, 0, 1)",
+        pointBoarderColor: "rgba(255, 204, 0, 1)",
 
-        // backgroundColor: "rgba(255, 204, 0, 0.4)",
+        backgroundColor: "rgba(255, 204, 0, 0.4)",
 
-        // pointHoverBackgroundColor: "rgba(255, 204, 0, 1)",
+        pointHoverBackgroundColor: "rgba(255, 204, 0, 1)",
 
-        // pointHoverBorderColor: "rgba(255, 204, 0, 1)",
+        pointHoverBorderColor: "rgba(255, 204, 0, 1)",
 
-        // data: elevatorSineData
+        data: elevatorSineData
 
-      // },
+      },
 
-      // {
+      {
 
-        // fill: false,
+        fill: false,
 
-        // label: 'Elevator Cabin Position',
+        label: 'Elevator Cabin Position',
 
-        // yAxisID: 'cabinPos',
+        yAxisID: 'cabinPos',
 
-        // borderColor: "rgba(24, 120, 240, 1)",
+        borderColor: "rgba(24, 120, 240, 1)",
 
-        // pointBoarderColor: "rgba(24, 120, 240, 1)",
+        pointBoarderColor: "rgba(24, 120, 240, 1)",
 
-        // backgroundColor: "rgba(24, 120, 240, 0.4)",
+        backgroundColor: "rgba(24, 120, 240, 0.4)",
 
-        // pointHoverBackgroundColor: "rgba(24, 120, 240, 1)",
+        pointHoverBackgroundColor: "rgba(24, 120, 240, 1)",
 
-        // pointHoverBorderColor: "rgba(24, 120, 240, 1)",
+        pointHoverBorderColor: "rgba(24, 120, 240, 1)",
 
-        // data: cabinPosData
+        data: cabinPosData
 
-      // }
+      }
 
-    // ]
+    ]
 
-  // }
+  }
 
   
-  // // for dashboard door position data
-  // var doorPosdata = {
+  // for dashboard door position data
+  var doorPosdata = {
 
-    // labels:timeData,
+    labels:timeData,
 
-    // datasets: [
+    datasets: [
 
-      // {
+      {
 
-        // fill: false,
+        fill: false,
 
-        // label:'Door State Position 1',
+        label:'Door State Position 1',
 
-        // yAxisID: 'doorStatePos1',
+        yAxisID: 'doorStatePos1',
 
-        // borderColor: "rgba(255, 204, 0, 1)",
+        borderColor: "rgba(255, 204, 0, 1)",
 
-        // pointBoarderColor: "rgba(255, 204, 0, 1)",
+        pointBoarderColor: "rgba(255, 204, 0, 1)",
 
-        // backgroundColor: "rgba(255, 204, 0, 0.4)",
+        backgroundColor: "rgba(255, 204, 0, 0.4)",
 
-        // pointHoverBackgroundColor: "rgba(255, 204, 0, 1)",
+        pointHoverBackgroundColor: "rgba(255, 204, 0, 1)",
 
-        // pointHoverBorderColor: "rgba(255, 204, 0, 1)",
+        pointHoverBorderColor: "rgba(255, 204, 0, 1)",
 
-        // data: doorStatePos1Data
+        data: doorStatePos1Data
 
-      // },
+      },
 
-      // {
+      {
 
-        // fill: false,
+        fill: false,
 
-        // label: 'Door State Position 2',
+        label: 'Door State Position 2',
 
-        // yAxisID: 'doorStatePos2',
+        yAxisID: 'doorStatePos2',
 
-        // borderColor: "rgba(24, 120, 240, 1)",
+        borderColor: "rgba(24, 120, 240, 1)",
 
-        // pointBoarderColor: "rgba(24, 120, 240, 1)",
+        pointBoarderColor: "rgba(24, 120, 240, 1)",
 
-        // backgroundColor: "rgba(24, 120, 240, 0.4)",
+        backgroundColor: "rgba(24, 120, 240, 0.4)",
 
-        // pointHoverBackgroundColor: "rgba(24, 120, 240, 1)",
+        pointHoverBackgroundColor: "rgba(24, 120, 240, 1)",
 
-        // pointHoverBorderColor: "rgba(24, 120, 240, 1)",
+        pointHoverBorderColor: "rgba(24, 120, 240, 1)",
 
-        // data: doorStatePos2Data
+        data: doorStatePos2Data
 
-      // }
+      }
 
-    // ]
+    ]
 
-  // }
+  }
   
   
-  // // for dashboard drive phase data
-  // var drivePhasedata = {
+  // for dashboard drive phase data
+  var drivePhasedata = {
 
-    // labels:timeData,
+    labels:timeData,
 
-    // datasets: [
+    datasets: [
 
-      // {
+      {
 
-        // fill: false,
+        fill: false,
 
-        // label:'Elevator Drive Phase',
+        label:'Elevator Drive Phase',
 
-        // yAxisID: 'drivePhase',
+        yAxisID: 'drivePhase',
 
-        // borderColor: "rgba(255, 204, 0, 1)",
+        borderColor: "rgba(255, 204, 0, 1)",
 
-        // pointBoarderColor: "rgba(255, 204, 0, 1)",
+        pointBoarderColor: "rgba(255, 204, 0, 1)",
 
-        // backgroundColor: "rgba(255, 204, 0, 0.4)",
+        backgroundColor: "rgba(255, 204, 0, 0.4)",
 
-        // pointHoverBackgroundColor: "rgba(255, 204, 0, 1)",
+        pointHoverBackgroundColor: "rgba(255, 204, 0, 1)",
 
-        // pointHoverBorderColor: "rgba(255, 204, 0, 1)",
+        pointHoverBorderColor: "rgba(255, 204, 0, 1)",
 
-        // data: doorDrvPhsData
+        data: doorDrvPhsData
 
-      // }
-    // ]
+      }
+    ]
 
-  // }
+  }
   
   // For cabinpos data menubar
   var cabinPosMenudata = {
@@ -310,216 +310,216 @@ $('.nav ul li:first').addClass('active');
   }
 
 
-  // var basicOption = {
-    // responsive:false,
-    // maintainAspectRatio: false,
-    // title: {
+  var basicOption = {
+    responsive:false,
+    maintainAspectRatio: false,
+    title: {
 
-      // display: true,
+      display: true,
 
-      // text: 'Elevator Real-time Data',
+      text: 'Elevator Real-time Data',
 
-      // fontSize: 16
+      fontSize: 16
 
-    // },
+    },
 
-    // scales: {
+    scales: {
 
-      // yAxes: [{
+      yAxes: [{
 
-        // id: 'elevatorSine',
+        id: 'elevatorSine',
 
-        // type: 'linear',
+        type: 'linear',
 
-        // scaleLabel: {
+        scaleLabel: {
 
-          // labelString: 'Elevator Sine',
+          labelString: 'Elevator Sine',
 
-          // display: true
+          display: true
 
-        // },
+        },
 
-        // position: 'left',
+        position: 'left',
 
-      // }, {
+      }, {
 
-          // id: 'cabinPos',
+          id: 'cabinPos',
 
-          // type: 'linear',
+          type: 'linear',
 
-          // scaleLabel: {
+          scaleLabel: {
 
-            // labelString: 'Elevator Cabin Position',
+            labelString: 'Elevator Cabin Position',
 
-            // display: true
+            display: true
 
-          // },
+          },
 
-          // position: 'right'
+          position: 'right'
 
-        // }]
+        }]
 
-    // }
+    }
 
-  // }
+  }
   
   
 
-  // var basicOption2 = {
-    // responsive:false,
-    // maintainAspectRatio: false,
-    // title: {
+  var basicOption2 = {
+    responsive:false,
+    maintainAspectRatio: false,
+    title: {
 
-      // display: true,
+      display: true,
 
-      // text: 'Elevator Real-time Door Position Data',
+      text: 'Elevator Real-time Door Position Data',
 
-      // fontSize: 16
+      fontSize: 16
 
-    // },
+    },
 
-    // scales: {
+    scales: {
 
-      // yAxes: [
+      yAxes: [
 
-      // {
+      {
 
-        // id: 'doorStatePos1',
+        id: 'doorStatePos1',
 
-        // type: 'linear',
+        type: 'linear',
 
-        // labels:["Opening","Closing", "Opened", "Closed", "Locked"],
+        labels:["Opening","Closing", "Opened", "Closed", "Locked"],
 
-        // scaleLabel: {
+        scaleLabel: {
 
-          // labelString: 'Door State Position 1',
+          labelString: 'Door State Position 1',
 
-          // display: true
+          display: true
 
-        // },
+        },
 
-        // position: 'left',
+        position: 'left',
 
-        // ticks: {
+        ticks: {
 
-                      // beginAtZero: true,
+                      beginAtZero: true,
 
-                      // min:0,
+                      min:0,
 
-                      // max:4,
+                      max:4,
 
-                      // stepSize : 1,
+                      stepSize : 1,
 
-                      // callback: function(value, index, values) {
+                      callback: function(value, index, values) {
 
-                          // return yLabels[value];
+                          return yLabels[value];
 
-                      // }
+                      }
 
-        // }
+        }
 
-      // },
+      },
 
-      // {
+      {
 
-          // id: 'doorStatePos2',
+          id: 'doorStatePos2',
 
-          // type: 'linear',
+          type: 'linear',
 
-          // labels : ["Opening","Closing", "Opened", "Closed", "Locked"],
+          labels : ["Opening","Closing", "Opened", "Closed", "Locked"],
 
-          // scaleLabel: {
+          scaleLabel: {
 
-            // labelString: 'Door State Position 2',
+            labelString: 'Door State Position 2',
 
-            // display: true
+            display: true
 
-          // },
+          },
 
-          // position: 'right',
+          position: 'right',
 
-          // ticks: {
+          ticks: {
 
-                      // beginAtZero: true,
+                      beginAtZero: true,
 
-                      // min:0,
+                      min:0,
 
-                      // max:4,
+                      max:4,
 
-                      // stepSize : 1,
+                      stepSize : 1,
 
-                      // callback: function(value, index, values) {
+                      callback: function(value, index, values) {
 
-                          // return yLabels[value];
+                          return yLabels[value];
 
-                      // }
+                      }
 
-          // }
+          }
 
-      // }
+      }
 
-    // ]
+    ]
 
-    // }
+    }
 
-  // }
+  }
   
-  // var basicOption3 = {
-    // responsive:false,
-    // maintainAspectRatio: false,
-    // title: {
+  var basicOption3 = {
+    responsive:false,
+    maintainAspectRatio: false,
+    title: {
 
-      // display: true,
+      display: true,
 
-      // text: 'Elevator Real-time Drive Phase Data',
+      text: 'Elevator Real-time Drive Phase Data',
 
-      // fontSize: 16
+      fontSize: 16
 
-    // },
+    },
 
-    // scales: {
-      // yAxes: [
-      // {
+    scales: {
+      yAxes: [
+      {
 
-          // id: 'drivePhase',
+          id: 'drivePhase',
 
-          // type: 'linear',
+          type: 'linear',
 
-          // scaleLabel: {
+          scaleLabel: {
 
-            // labelString: 'Door Drive Phase',
+            labelString: 'Door Drive Phase',
 
-            // display: true
+            display: true
 
-          // },
+          },
 
-          // position: 'left',
+          position: 'left',
 
-          // ticks: {
+          ticks: {
 
-                      // beginAtZero: true,
+                      beginAtZero: true,
 
-                      // min:0,
+                      min:0,
 
-                      // max:3,
+                      max:3,
 
-                      // stepSize : 1,
+                      stepSize : 1,
 
-                      // callback: function(value, index, values) {
+                      callback: function(value, index, values) {
 
-                          // return yLabels2[value];
+                          return yLabels2[value];
 
-                      // }
+                      }
 
-          // }
+          }
 
-      // }
+      }
 
-        // ]
+        ]
 
-    // }
+    }
 
-  // }
+  }
   
   var basicOption4 = {
     responsive:false,
@@ -744,43 +744,43 @@ $('.nav ul li:first').addClass('active');
 
   //Get the context of the canvas element we want to select
 
-  // var ctx = document.getElementById("myChart").getContext("2d");
-  // var ctx2 = document.getElementById("myChart2").getContext("2d");
-  // var ctx3 = document.getElementById("myChart3").getContext("2d");
+  var ctx = document.getElementById("myChart").getContext("2d");
+  var ctx2 = document.getElementById("myChart2").getContext("2d");
+  var ctx3 = document.getElementById("myChart3").getContext("2d");
   var ctx4 = document.getElementById("myChart4").getContext("2d");
   var ctx5 = document.getElementById("myChart5").getContext("2d");
   var ctx6 = document.getElementById("myChart6").getContext("2d");
 
   var optionsNoAnimation = { animation: false }
 
-  // var myLineChart = new Chart(ctx, {
+  var myLineChart = new Chart(ctx, {
 
-    // type: 'line',
+    type: 'line',
 
-    // data: data,
+    data: data,
 
-    // options: basicOption
+    options: basicOption
 
-  // });
+  });
 
-   // var myLineChart2 = new Chart(ctx2, {
+   var myLineChart2 = new Chart(ctx2, {
 
-     // type: 'line',
+     type: 'line',
 
-     // data: doorPosdata,
+     data: doorPosdata,
 
-     // options: basicOption2
+     options: basicOption2
 
-   // });
-   // var myLineChart3 = new Chart(ctx3, {
+   });
+   var myLineChart3 = new Chart(ctx3, {
 
-     // type: 'line',
+     type: 'line',
 
-     // data: drivePhasedata,
+     data: drivePhasedata,
 
-     // options: basicOption3
+     options: basicOption3
 
-   // });
+   });
    
    // for menu charts
    var myLineChart4 = new Chart(ctx4, {
@@ -910,9 +910,9 @@ $('.nav ul li:first').addClass('active');
 
   }
 
-  //myLineChart.update();
-  //myLineChart2.update();
-  //myLineChart3.update();
+  myLineChart.update();
+  myLineChart2.update();
+  myLineChart3.update();
   myLineChart4.update();
   myLineChart5.update();
   myLineChart6.update();
