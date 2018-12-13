@@ -358,6 +358,59 @@ $('.nav ul li:first').addClass('active');
     }
 
   }
+  
+  var basicOption4 = {
+    responsive:false,
+    maintainAspectRatio: false,
+    title: {
+
+      display: true,
+
+      text: 'Elevator Real-time Data',
+
+      fontSize: 16
+
+    },
+
+    scales: {
+
+      yAxes: [{
+
+        id: 'elevatorSineMenu',
+
+        type: 'linear',
+
+        scaleLabel: {
+
+          labelString: 'Elevator Sine',
+
+          display: true
+
+        },
+
+        position: 'left',
+
+      }, {
+
+          id: 'cabinPosMenu',
+
+          type: 'linear',
+
+          scaleLabel: {
+
+            labelString: 'Elevator Cabin Position',
+
+            display: true
+
+          },
+
+          position: 'right'
+
+        }]
+
+    }
+
+  }
 
   var basicOption2 = {
     responsive:false,
@@ -571,7 +624,7 @@ $('.nav ul li:first').addClass('active');
 
      data: cabinPosMenudata,
 
-     options: basicOption
+     options: basicOption4
 
    });
    var myLineChart5 = new Chart(ctx5, {
