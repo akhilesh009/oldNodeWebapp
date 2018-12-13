@@ -216,7 +216,8 @@ $('.nav ul li:first').addClass('active');
   }
 
   var basicOption2 = {
-
+    responsive:false,
+    maintainAspectRatio: false,
     title: {
 
       display: true,
@@ -314,7 +315,8 @@ $('.nav ul li:first').addClass('active');
   }
   
   var basicOption3 = {
-
+    responsive:false,
+    maintainAspectRatio: false,
     title: {
 
       display: true,
