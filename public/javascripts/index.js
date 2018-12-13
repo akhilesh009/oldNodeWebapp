@@ -386,6 +386,9 @@ $('.nav ul li:first').addClass('active');
   var ctx = document.getElementById("myChart").getContext("2d");
   var ctx2 = document.getElementById("myChart2").getContext("2d");
   var ctx3 = document.getElementById("myChart3").getContext("2d");
+  var ctx4 = document.getElementById("myChart4").getContext("2d");
+  var ctx5 = document.getElementById("myChart5").getContext("2d");
+  var ctx6 = document.getElementById("myChart6").getContext("2d");
 
   var optionsNoAnimation = { animation: false }
 
@@ -409,6 +412,33 @@ $('.nav ul li:first').addClass('active');
 
    });
    var myLineChart3 = new Chart(ctx3, {
+
+     type: 'line',
+
+     data: drivePhasedata,
+
+     options: basicOption3
+
+   });
+   var myLineChart4 = new Chart(ctx4, {
+
+     type: 'line',
+
+     data: data,
+
+     options: basicOption2
+
+   });
+   var myLineChart5 = new Chart(ctx5, {
+
+     type: 'line',
+
+     data: drivePhasedata,
+
+     options: basicOption3
+
+   });
+   var myLineChart6 = new Chart(ctx6, {
 
      type: 'line',
 
@@ -520,6 +550,9 @@ $('.nav ul li:first').addClass('active');
   myLineChart.update();
   myLineChart2.update();
   myLineChart3.update();
+  myLineChart4.update();
+  myLineChart5.update();
+  myLineChart6.update();
 
   } catch (err) {
     console.error(err);
