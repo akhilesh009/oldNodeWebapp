@@ -86,12 +86,12 @@ a {
     background-color:#9370DB;
     color:white;
     text-align:center;
-    padding:5px;
+    padding:0px;
 }
 .nav {
     line-height:30px;
     background-color:#eeeeee;
-    height:610px;
+    height:650px;
     width:150px;
     float:left;
     padding:5px;
