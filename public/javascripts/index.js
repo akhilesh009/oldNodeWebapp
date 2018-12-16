@@ -33,7 +33,7 @@ $('.nav ul li:first').addClass('active');
 
         fill: false,
 
-        label: 'Elevator Sine',
+        label: 'Sine Value',
 
         yAxisID: 'elevatorSine',
 
@@ -55,7 +55,7 @@ $('.nav ul li:first').addClass('active');
 
         fill: false,
 
-        label: 'Elevator Cabin Position',
+        label: 'Cabin Position',
 
         yAxisID: 'cabinPos',
 
@@ -145,7 +145,7 @@ $('.nav ul li:first').addClass('active');
 
         fill: false,
 
-        label:'Elevator Drive Phase',
+        label:'Drive Phase',
 
         yAxisID: 'drivePhase',
 
@@ -177,7 +177,7 @@ $('.nav ul li:first').addClass('active');
 
         fill: false,
 
-        label: 'Elevator Sine',
+        label: 'Sine Value',
 
         yAxisID: 'elevatorSine',
 
@@ -199,7 +199,7 @@ $('.nav ul li:first').addClass('active');
 
         fill: false,
 
-        label: 'Elevator Cabin Position',
+        label: 'Cabin Position',
 
         yAxisID: 'cabinPos',
 
@@ -288,7 +288,7 @@ $('.nav ul li:first').addClass('active');
 
         fill: false,
 
-        label:'Elevator Drive Phase',
+        label:'Drive Phase',
 
         yAxisID: 'drivePhase',
 
@@ -317,7 +317,8 @@ $('.nav ul li:first').addClass('active');
 
       display: true,
 
-      text: 'Elevator Real-time Data',
+
+      text: 'Sine and Cabin Position Data',
 
       fontSize: 16
 
@@ -333,7 +334,7 @@ $('.nav ul li:first').addClass('active');
 
         scaleLabel: {
 
-          labelString: 'Elevator Sine',
+          labelString: 'Sine Value',
 
           display: true
 
@@ -349,7 +350,7 @@ $('.nav ul li:first').addClass('active');
 
           scaleLabel: {
 
-            labelString: 'Elevator Cabin Position',
+            labelString: 'Cabin Position',
 
             display: true
 
@@ -372,7 +373,7 @@ $('.nav ul li:first').addClass('active');
 
       display: true,
 
-      text: 'Elevator Real-time Door Position Data',
+      text: 'Door Position Data',
 
       fontSize: 16
 
@@ -471,7 +472,7 @@ $('.nav ul li:first').addClass('active');
 
       display: true,
 
-      text: 'Elevator Real-time Drive Phase Data',
+      text: 'Drive Phase Data',
 
       fontSize: 16
 
@@ -487,7 +488,7 @@ $('.nav ul li:first').addClass('active');
 
           scaleLabel: {
 
-            labelString: 'Door Drive Phase',
+            labelString: 'Drive Phase',
 
             display: true
 
@@ -528,7 +529,7 @@ $('.nav ul li:first').addClass('active');
 
       display: true,
 
-      text: 'Elevator Real-time Data',
+      text: 'Sine and Cabin Position Data',
 
       fontSize: 16
 
@@ -544,7 +545,7 @@ $('.nav ul li:first').addClass('active');
 
         scaleLabel: {
 
-          labelString: 'Elevator Sine',
+          labelString: 'Sine Value',
 
           display: true
 
@@ -560,7 +561,7 @@ $('.nav ul li:first').addClass('active');
 
           scaleLabel: {
 
-            labelString: 'Elevator Cabin Position',
+            labelString: 'Cabin Position',
 
             display: true
 
@@ -581,7 +582,7 @@ $('.nav ul li:first').addClass('active');
 
       display: true,
 
-      text: 'Elevator Real-time Door Position Data',
+      text: 'Door Position Data',
 
       fontSize: 16
 
@@ -680,7 +681,7 @@ $('.nav ul li:first').addClass('active');
 
       display: true,
 
-      text: 'Elevator Real-time Drive Phase Data',
+      text: 'Drive Phase Data',
 
       fontSize: 16
 
@@ -696,7 +697,7 @@ $('.nav ul li:first').addClass('active');
 
           scaleLabel: {
 
-            labelString: 'Door Drive Phase',
+            labelString: 'Drive Phase',
 
             display: true
 
