@@ -875,6 +875,9 @@ $('.nav ul li:first').addClass('active');
     }
    
   }
+  if (doorStatePos1Data.length > maxLen) {
+        doorStatePos1Data.shift();
+  }
 
   if(obj.doorStatePos2) {
     if(obj.doorStatePos2 === 'Opening') {
@@ -893,6 +896,9 @@ $('.nav ul li:first').addClass('active');
       doorStatePos2Data.push(4);
     }
   }
+  if (doorStatePos2Data.length > maxLen) {
+        doorStatePos2Data.shift();
+  }
 
   if(obj.drivePhase) {
     if(obj.drivePhase === 'Acceleration') {
@@ -909,6 +915,10 @@ $('.nav ul li:first').addClass('active');
     }
 
   }
+  if (doorDrvPhsData.length > maxLen) {
+        doorDrvPhsData.shift();
+  }
+  
 
   myLineChart.update();
   myLineChart2.update();
