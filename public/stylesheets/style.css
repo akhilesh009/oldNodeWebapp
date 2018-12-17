@@ -86,7 +86,8 @@ a {
     background-color:#9370DB;
     color:white;
     text-align:center;
-    padding:0px;
+    padding:10px;
+	font-size:medium;
 }
 .nav {
     line-height:30px;
