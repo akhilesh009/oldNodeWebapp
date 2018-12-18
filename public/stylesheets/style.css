@@ -115,3 +115,6 @@ a {
 .chart-container {
   position: relative;
 }
+#container{
+width:100%;
+}
