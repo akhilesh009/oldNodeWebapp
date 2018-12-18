@@ -92,7 +92,7 @@ a {
 .nav {
     line-height:30px;
     background-color:#eeeeee;
-    height:690px;
+    height:670px;
     width:150px;
     float:left;
     padding:5px;
@@ -106,7 +106,7 @@ a {
     padding:10px;
 }
 .footer {
-    background-color:black;
+    background-color:#9370DB;
     color:white;
     clear:both;
     text-align:center;
