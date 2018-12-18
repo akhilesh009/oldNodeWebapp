@@ -675,7 +675,7 @@ $('.nav ul li:first').addClass('active');
   }
   
   var basicOption6 = {
-    responsive:false,
+    //responsive:false,
     maintainAspectRatio: false,
     title: {
 
