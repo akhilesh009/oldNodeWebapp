@@ -802,7 +802,7 @@ $('.nav ul li:first').addClass('active');
      options: basicOption5
 
    });
-   setTimeout(function() {
+
    var myLineChart6 = new Chart(ctx6, {
 
      type: 'line',
@@ -812,7 +812,6 @@ $('.nav ul li:first').addClass('active');
      options: basicOption6
 
    });
-   },100);
 
   var ws = new WebSocket('wss://' + location.host);
 
