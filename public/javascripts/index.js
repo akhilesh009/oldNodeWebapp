@@ -675,8 +675,8 @@ $('.nav ul li:first').addClass('active');
   }
   
   var basicOption6 = {
-    responsive:true,
-    //maintainAspectRatio: false,
+    responsive:false,
+    maintainAspectRatio: false,
     title: {
 
       display: true,
