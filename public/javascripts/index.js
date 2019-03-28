@@ -813,7 +813,7 @@ $('.nav ul li:first').addClass('active');
 
    });
 
-  var ws = new WebSocket('wss://' + location.host);
+  var ws = new WebSocket('ws://' + location.host);
 
   ws.onopen = function () {
 
